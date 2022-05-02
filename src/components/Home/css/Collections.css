@@ -1,0 +1,56 @@
+.collection_header {
+  margin-bottom: 2rem;
+}
+
+.collection_header h2 {
+  text-align: center;
+}
+
+.collection_image {
+  width: 95%;
+}
+
+.collection_image:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.image-with-text-overlay__content {
+  z-index: 6;
+  width: 100%;
+  padding: 15px;
+  transform: translateY(-417%);
+  position: relative;
+}
+
+.overlay_title {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.overlay_title:hover {
+  cursor: pointer;
+}
+
+.categories-items-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.categories-items-list li {
+  cursor: pointer;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 100;
+  padding: 6px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.categories_link {
+  color: white;
+}

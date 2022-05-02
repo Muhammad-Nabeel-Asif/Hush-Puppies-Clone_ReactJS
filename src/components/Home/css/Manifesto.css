@@ -1,0 +1,62 @@
+.manifesto_h2 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph p {
+  text-align: center;
+  max-width: 80%;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.items_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0;
+  margin: 0 60px;
+}
+
+.f_image {
+  background-image: url(//cdn.shopify.com/s/files/1/0016/0074/9623/files/02-Brand_Banner_680x260_Scarves.jpg?v=1636716076);
+  width: 650px;
+  height: 320px;
+}
+
+.s_image {
+  background-image: url(https://i.ytimg.com/vi_webp/hum-Td4-vxY/hqdefault.webp);
+  width: 580px;
+  height: 320px;
+}
+
+.t_image {
+  background-image: url(https://i.ytimg.com/vi_webp/4O7LeIx7xI8/maxresdefault.webp);
+  width: 650px;
+  height: 320px;
+}
+
+.fo_image {
+  background-image: url(//cdn.shopify.com/s/files/1/0016/0074/9623/files/674x300.jpg?v=1635838352);
+  width: 580px;
+  height: 320px;
+}
+
+.fi_image {
+  background-image: url(https://cdn.shopify.com/s/files/1/0016/0074/9623/files/674x300_2.jpg?v=1635853221);
+  width: 650px;
+  height: 315px;
+}
+
+.si_image {
+  background-image: url(https://i.ytimg.com/vi_webp/6Qd6ve2v1vs/sddefault.webp);
+  width: 580px;
+  height: 315px;
+  margin-bottom: 40px;
+}

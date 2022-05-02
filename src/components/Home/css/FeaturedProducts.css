@@ -1,0 +1,32 @@
+.cards_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.featured_products_heading {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  align-self: center;
+  justify-self: center;
+}
+
+.image {
+  height: 150px;
+}
+
+.card_title {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.card_price {
+  padding-bottom: 10px;
+}
+
+.card_size {
+  font-size: smaller;
+  padding-bottom: 10px;
+}

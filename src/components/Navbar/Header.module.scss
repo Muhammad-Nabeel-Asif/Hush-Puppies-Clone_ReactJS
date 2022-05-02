@@ -1,0 +1,125 @@
+@import "../../sass/variables.scss";
+.header {
+  background: white;
+  width: 100%;
+  height: 11vh;
+  padding: 0 1rem;
+  position: relative;
+  @include breakpoint(md) {
+    padding: 0 2rem;
+  }
+  transition: 0.3s ease all;
+
+  &__content {
+    padding: 11px;
+    background-color: white;
+    // width: 95.3%;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    position: fixed;
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: rgba($dark, 0.9);
+      backdrop-filter: blur(2px);
+      transform: translate(0);
+      transition: 0.3s ease transform;
+      font-size: 16px;
+
+      &__bag_icon {
+        font-size: 20px;
+      }
+
+      @include breakpoint(md) {
+        transform: none;
+        flex-direction: row;
+        background: transparent;
+        width: auto;
+        height: 100%;
+        position: static;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-lg;
+        @include breakpoint(md) {
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 0;
+          margin-right: calc(0.5rem + #{$spacing-md});
+        }
+        li {
+          &:not(:last-child) {
+            margin-bottom: $spacing-lg;
+            @include breakpoint(md) {
+              margin-bottom: 0;
+            }
+          }
+          &:nth-child(1) {
+            background-color: #ffff33;
+            font-weight: 600;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: inherit;
+            padding: 15px 15px;
+            border-radius: $borderRadius;
+            transition: 0.3s ease all;
+
+            &:hover {
+              background: rgba($light, 0.1);
+            }
+            &:active {
+              border-radius: calc(#{$borderRadius} + 6px);
+              background: linear-gradient(rgba($light, 0.1), rgba($light, 0.2));
+            }
+          }
+        }
+      }
+      button {
+        cursor: pointer;
+        padding: 0.55rem 1.05rem;
+        font-size: medium;
+        font-family: inherit;
+        background: transparent;
+        color: $dark;
+        border: none;
+        transition: padding 0.3s ease-in-out;
+        font-weight: 500;
+
+        &:hover {
+          color: $dark;
+          padding: 0.85rem 1.35rem;
+        }
+      }
+
+      &.isMenu {
+        transform: translate(100%);
+      }
+    }
+
+    &__toggle {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      transition: 0.3s ease all;
+      position: relative;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

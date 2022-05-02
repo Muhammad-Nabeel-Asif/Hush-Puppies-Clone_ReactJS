@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Basset;
+  src: url(./../../../sass/fonts/BassetRegular.ttf);
+}
+
+.footer_container {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #fddd77;
+  height: 72vh;
+  padding: 70px 25px;
+}
+
+.col_1_icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 40%;
+}
+
+.col_1_icons div {
+  font-size: large;
+}
+
+.link {
+  color: black;
+}
+
+.heading__primary {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.heading__secondary {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.heading__secondary.font_basset {
+  font-family: Basset;
+  word-spacing: -4px;
+  color: rgb(50, 50, 50);
+}
+
+.account_list li {
+  list-style: none;
+  padding: 4px;
+  font-size: small;
+}
+
+.paragraph {
+  padding: 10px 0px 20px 0px;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.form input {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+
+.form button {
+  margin-top: 5px;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.904);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.form button:hover {
+  background-color: #000;
+}

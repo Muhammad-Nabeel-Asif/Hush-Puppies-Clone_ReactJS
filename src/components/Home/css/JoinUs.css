@@ -1,0 +1,47 @@
+@font-face {
+  font-family: BassetBold;
+  src: url(./../../../sass/fonts/BassetBold.ttf);
+}
+
+.JoinUs__container {
+  margin: 1rem;
+  padding: 50px 20px;
+  border-top: 0.1px solid rgba(128, 128, 128, 0.527);
+  border-bottom: 0.1px solid rgba(128, 128, 128, 0.527);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.JoinUs__container .title {
+  font-family: BassetBold;
+  word-spacing: -4px;
+  color: rgb(50, 50, 50);
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+.JoinUs__container p {
+  font-size: 14px;
+  font-weight: 300;
+  width: 28%;
+}
+
+.JoinUs__container input {
+  padding: 15px 20px;
+  flex-grow: 0.8;
+}
+
+.JoinUs__container button {
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.904);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.JoinUs__container button:hover {
+  background-color: #000;
+}
